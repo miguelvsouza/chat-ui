@@ -1,4 +1,6 @@
 import {
+  Check,
+  CheckCheck,
   Mic,
   Paperclip,
   Phone,
@@ -28,7 +30,7 @@ export function App() {
   return (
     <div className="bg-zinc-900 text-zinc-50 h-screen flex items-center justify-center antialiased">
       <div className="border rounded-lg bg-zinc-800 w-[540px] h-[780px] space-y-2 flex-col flex p-4">
-        <header className="flex items-center justify-between gap-1 border-b pb-2">
+        <header className="flex items-center justify-between gap-1 border-b pb-4">
           <div className="space-x-4 flex-1 flex items-center">
             <img
               src="https://github.com/miguelvsouza.png"
@@ -51,14 +53,14 @@ export function App() {
               <Phone className="text-zinc-50" size={20} strokeWidth={1} />
             </button>
           </div>
-          <button className="rounded-md p-2 hover:bg-zinc-700">
+          <button className="rounded-md px-4 py-3 hover:bg-zinc-700">
             <Search className="text-zinc-50" size={20} strokeWidth={1} />
           </button>
         </header>
 
         <main
           ref={mainRef}
-          className="flex-1 grid grid-rows-[1fr_auto] overflow-y-auto pr-2"
+          className="flex-1 grid grid-rows-[1fr_auto] overflow-y-auto mr-[-8px]"
         >
           <div className="flex-1" />
           <div className="grid grid-flow-row auto-rows-min gap-1">
@@ -86,8 +88,33 @@ export function App() {
             <div className="max-w-[380px] ml-auto flex items-center gap-2">
               <span className="text-xs text-zinc-400">18h16</span>
               <div className="bg-sky-800 text-zinc-200 rounded-md py-2 px-3">
-                <span>Oii, Mii!! Tdo bem sim. Cheguei agora</span>
+                <span>Oii, Mii!!</span>
               </div>
+              <CheckCheck
+                className="text-sky-400"
+                size={20}
+                strokeWidth={1.5}
+              />
+            </div>
+
+            <div className="max-w-[380px] ml-auto flex items-center gap-2">
+              <span className="text-xs text-zinc-400">18h16</span>
+              <div className="bg-sky-800 text-zinc-200 rounded-md py-2 px-3">
+                <span>Tudo bem e você?</span>
+              </div>
+              <CheckCheck
+                className="text-zinc-400"
+                size={20}
+                strokeWidth={1.5}
+              />
+            </div>
+
+            <div className="max-w-[380px] ml-auto flex items-center gap-2">
+              <span className="text-xs text-zinc-400">18h16</span>
+              <div className="bg-sky-800 text-zinc-200 rounded-md py-2 px-3">
+                <span>Acabei de chegar. Tá começando a chover por aqui.</span>
+              </div>
+              <Check className="text-zinc-400" size={25} strokeWidth={1.5} />
             </div>
           </div>
         </main>
@@ -104,7 +131,7 @@ export function App() {
           <input
             type="text"
             autoFocus
-            className="flex-1 py-3 px-1 bg-zinc-800 focus:outline-none"
+            className="flex-1 py-3 px-1 bg-zinc-800 max-h-44 focus:outline-none"
             placeholder="Mensagem"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
