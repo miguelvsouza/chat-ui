@@ -39,7 +39,7 @@ export function SendMessage({ onSendMessage }: ISendMessageProps) {
   }, [message])
 
   return (
-    <form className="flex items-center justify-between gap-2 px-2 border rounded-lg">
+    <form className="flex items-center justify-between gap-2 px-2 border border-zinc-600 rounded-lg">
       <div>
         <button type="button" className="rounded-md p-2 hover:bg-zinc-700">
           <Smile className="text-zinc-50" size={20} strokeWidth={1} />
@@ -51,7 +51,7 @@ export function SendMessage({ onSendMessage }: ISendMessageProps) {
 
       <textarea
         ref={textareaRef}
-        className="flex-1 py-3 px-1 bg-zinc-800 max-h-44 focus:outline-none resize-none"
+        className="flex-1 py-3 px-1 bg-zinc-900 max-h-44 focus:outline-none resize-none"
         placeholder="Mensagem"
         rows={1}
         value={message}

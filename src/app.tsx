@@ -3,11 +3,11 @@ import { Chat } from "./components/chat"
 export function App() {
   return (
     <div className="bg-zinc-900 text-zinc-50 h-screen flex antialiased">
-      <div className="w-[400px] flex flex-col items-center border-r">
-        <div className="w-full border-b p-4">
+      <div className="w-[400px] flex flex-col items-center border-r border-r-zinc-600">
+        <div className="w-full border-b border-b-zinc-600 p-4">
           <h3 className="font-bold tracking-tight text-2xl">Atendimentos</h3>
         </div>
-        <div className="w-full border-b flex justify-center items-center p-4">
+        <div className="w-full border-b border-b-zinc-600 flex justify-center items-center p-4">
           <div className="flex flex-col items-center gap-2">
             <p className="flex items-end justify-center gap-2 font-semibold text-lg">
               <span className="font-bold text-2xl text-[#875ef8]">0</span>{" "}
@@ -40,7 +40,7 @@ export function App() {
                 <span className="text-xs">online</span>
               </div>
 
-              <span className="rounded-full bg-sky-600 text-xs font-semibold px-2 py-1">
+              <span className="rounded-full bg-[#875ef8] text-xs font-semibold px-2 py-1">
                 Nota Fiscal
               </span>
             </div>
@@ -59,7 +59,7 @@ export function App() {
                 <span className="text-xs">online</span>
               </div>
 
-              <span className="rounded-full bg-sky-600 text-xs font-semibold px-2 py-1">
+              <span className="rounded-full bg-[#875ef8] text-xs font-semibold px-2 py-1">
                 Nota Fiscal
               </span>
             </div>
@@ -67,7 +67,9 @@ export function App() {
         </div>
       </div>
       <Chat />
-      <div className="w-[400px] border-l">Detalhes do cliente</div>
+      <div className="w-[400px] border-l border-l-zinc-600">
+        Detalhes do cliente
+      </div>
     </div>
   )
 }

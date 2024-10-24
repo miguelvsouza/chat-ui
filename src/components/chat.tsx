@@ -31,8 +31,8 @@ export function Chat() {
   }, [messages])
 
   return (
-    <div className="bg-zinc-800 w-1/2 h-full space-y-2 flex-col flex flex-1 p-4">
-      <header className="flex items-center justify-between gap-1 border-b pb-4">
+    <div className="w-1/2 h-full space-y-2 flex-col flex flex-1 p-4">
+      <header className="flex items-center justify-between gap-2 border-b border-b-zinc-600 pb-4">
         <div className="space-x-4 flex-1 flex items-center">
           <img
             src="https://github.com/miguelvsouza.png"
@@ -46,17 +46,22 @@ export function Chat() {
           </div>
         </div>
 
+        <button className="rounded-md px-4 py-3 hover:bg-zinc-700">
+          <Search className="text-zinc-50" size={20} strokeWidth={1} />
+        </button>
+
         <div className="bg-zinc-700 rounded-md flex items-center">
           <button className="rounded-md px-4 py-3 hover:bg-zinc-600">
             <Video className="text-zinc-50" size={20} strokeWidth={1} />
           </button>
-          <div className="border-r h-6" />
+          <div className="border-r border-r-zinc-600 h-6" />
           <button className="rounded-md px-4 py-3 hover:bg-zinc-600">
             <Phone className="text-zinc-50" size={20} strokeWidth={1} />
           </button>
         </div>
-        <button className="rounded-md px-4 py-3 hover:bg-zinc-700">
-          <Search className="text-zinc-50" size={20} strokeWidth={1} />
+
+        <button className="bg-[#875ef8] rounded-md px-5 py-2.5 hover:bg-[#875ef8]/80">
+          Finalizar
         </button>
       </header>
 
