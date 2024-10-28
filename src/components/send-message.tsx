@@ -1,5 +1,5 @@
 import { Mic, Paperclip, SendHorizonal, Smile } from "lucide-react"
-import { useState, KeyboardEvent, useRef, useEffect } from "react"
+import { useState, KeyboardEvent, useRef, useEffect, FormEvent } from "react"
 
 interface ISendMessageProps {
   onSendMessage: (message: string) => void
@@ -20,11 +20,12 @@ export function SendMessage({ onSendMessage }: ISendMessageProps) {
     if (e.key !== "Enter") return // Se não for Enter, não faz nada
     if (e.shiftKey) return // Se for Shift + Enter permite a quebra de linha
 
-    e.preventDefault()
-    handleSubmit()
+    handleSubmit(e)
   }
 
-  function handleSubmit() {
+  function handleSubmit(e: FormEvent) {
+    e.preventDefault()
+
     if (message.trim()) {
       onSendMessage(message.trim())
 
@@ -39,7 +40,10 @@ export function SendMessage({ onSendMessage }: ISendMessageProps) {
   }, [message])
 
   return (
-    <form className="flex items-center justify-between gap-2 px-2 border border-zinc-600 rounded-lg">
+    <form
+      onSubmit={handleSubmit}
+      className="flex items-center justify-between gap-2 px-2 border border-zinc-600 rounded-lg"
+    >
       <div>
         <button type="button" className="rounded-md p-2 hover:bg-zinc-700">
           <Smile className="text-zinc-50" size={20} strokeWidth={1} />

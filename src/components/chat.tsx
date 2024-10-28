@@ -32,7 +32,7 @@ export function Chat() {
 
   return (
     <div className="w-1/2 h-full space-y-2 flex-col flex flex-1 p-4">
-      <header className="flex items-center justify-between gap-2 border-b border-b-zinc-600 pb-4">
+      <header className="flex items-center justify-between gap-2 border-b border-b-zinc-600 pb-3">
         <div className="space-x-4 flex-1 flex items-center">
           <img
             src="https://github.com/miguelvsouza.png"
@@ -60,7 +60,7 @@ export function Chat() {
           </button>
         </div>
 
-        <button className="bg-[#875ef8] rounded-md px-5 py-2.5 hover:bg-[#875ef8]/80">
+        <button className="bg-[#875ef8] font-semibold rounded-md px-5 py-2.5 hover:bg-[#875ef8]/80">
           Finalizar
         </button>
       </header>

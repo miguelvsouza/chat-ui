@@ -1,113 +1,82 @@
 import { IMessageProps } from "../message"
 
 export const messages: IMessageProps[] = [
-  // {
-  //   sendAt: new Date("2024-10-24T08:00:00"),
-  //   sendByMe: true,
-  //   status: "read",
-  //   content: "Bom dia! Tudo bem por aí?",
-  // },
-  // {
-  //   sendAt: new Date("2024-10-24T08:02:15"),
-  //   sendByMe: false,
-  //   status: "read",
-  //   content: "Bom dia! Tudo ótimo. E com você?",
-  // },
-  // {
-  //   sendAt: new Date("2024-10-24T08:03:30"),
-  //   sendByMe: true,
-  //   status: "read",
-  //   content: "Tudo certo, também. Como está o trabalho?",
-  // },
-  // {
-  //   sendAt: new Date("2024-10-24T08:05:00"),
-  //   sendByMe: false,
-  //   status: "read",
-  //   content: "Bem puxado hoje, várias reuniões. E por aí?",
-  // },
-  // {
-  //   sendAt: new Date("2024-10-24T08:07:45"),
-  //   sendByMe: true,
-  //   status: "read",
-  //   content: "Por aqui tranquilo, começando a organizar as coisas do dia.",
-  // },
-  // {
-  //   sendAt: new Date("2024-10-24T08:09:00"),
-  //   sendByMe: false,
-  //   status: "read",
-  //   content: "Boa! Mais tarde vamos almoçar juntos?",
-  // },
-  // {
-  //   sendAt: new Date("2024-10-24T08:10:30"),
-  //   sendByMe: true,
-  //   status: "read",
-  //   content: "Claro! Que tal às 12h?",
-  // },
-  // {
-  //   sendAt: new Date("2024-10-24T08:11:45"),
-  //   sendByMe: false,
-  //   status: "read",
-  //   content: "Fechado! Vamos no restaurante de sempre?",
-  // },
-  // {
-  //   sendAt: new Date("2024-10-24T11:45:00"),
-  //   sendByMe: true,
-  //   status: "read",
-  //   content: "Já estou saindo do escritório. Encontro você lá.",
-  // },
-  // {
-  //   sendAt: new Date("2024-10-24T11:47:15"),
-  //   sendByMe: false,
-  //   status: "read",
-  //   content: "Perfeito, estou chegando também.",
-  // },
-  // {
-  //   sendAt: new Date("2024-10-24T13:30:00"),
-  //   sendByMe: true,
-  //   status: "read",
-  //   content: "Almoço ótimo! Da próxima vez, a sobremesa é por minha conta!",
-  // },
-  // {
-  //   sendAt: new Date("2024-10-24T13:32:30"),
-  //   sendByMe: false,
-  //   status: "read",
-  //   content: "Combinado, foi bom mesmo! Agora bora voltar ao trabalho.",
-  // },
-  // {
-  //   sendAt: new Date("2024-10-24T16:00:00"),
-  //   sendByMe: true,
-  //   status: "read",
-  //   content: "Terminei mais cedo aqui, vou para casa. Você ainda no trabalho?",
-  // },
-  // {
-  //   sendAt: new Date("2024-10-24T16:10:00"),
-  //   sendByMe: false,
-  //   status: "read",
-  //   content: "Ainda sim, tenho uma última reunião, mas logo acabo.",
-  // },
-  // {
-  //   sendAt: new Date("2024-10-24T18:00:00"),
-  //   sendByMe: true,
-  //   status: "read",
-  //   content: "Beleza, boa sorte aí. Qualquer coisa me chama.",
-  // },
-  // {
-  //   sendAt: new Date("2024-10-24T18:30:00"),
-  //   sendByMe: false,
-  //   status: "read",
-  //   content: "Valeu! Até mais tarde.",
-  // },
-  // // Início das mensagens mais recentes com status "sent" e "delivered"
-  // {
-  //   sendAt: new Date("2024-10-24T21:00:00"),
-  //   sendByMe: true,
-  //   status: "delivered",
-  //   content: "Está tudo bem por aí? Como foi o final do dia?",
-  // },
-  // {
-  //   sendAt: new Date("2024-10-24T21:05:00"),
-  //   sendByMe: true,
-  //   status: "sent",
-  //   content: "Me avisa se precisar de algo, estou por aqui.",
-  // },
+  {
+    sendAt: new Date("2024-10-24T09:00:00"),
+    sentByMe: false,
+    status: "read",
+    content:
+      "Bom dia! Estou precisando de ajuda para trocar o cartão de crédito que uso para pagar minha mensalidade.",
+  },
+  {
+    sendAt: new Date("2024-10-24T09:02:30"),
+    sentByMe: true,
+    status: "read",
+    content:
+      "Bom dia! Claro, posso te ajudar com isso. Você gostaria de atualizar o cartão de crédito cadastrado no sistema?",
+  },
+  {
+    sendAt: new Date("2024-10-24T09:03:45"),
+    sentByMe: false,
+    status: "read",
+    content: "Isso mesmo, gostaria de alterar o cartão atual.",
+  },
+  {
+    sendAt: new Date("2024-10-24T09:05:00"),
+    sentByMe: true,
+    status: "read",
+    content:
+      "Entendido! Para prosseguir, vou te enviar um link seguro onde você pode fazer a alteração. Tudo bem?",
+  },
+  {
+    sendAt: new Date("2024-10-24T09:06:15"),
+    sentByMe: false,
+    status: "read",
+    content: "Perfeito, pode enviar.",
+  },
+  {
+    sendAt: new Date("2024-10-24T09:07:30"),
+    sentByMe: true,
+    status: "read",
+    content:
+      "Aqui está o link: [link seguro]. Você pode acessar e seguir as instruções para atualizar seu cartão de crédito.",
+  },
+  {
+    sendAt: new Date("2024-10-24T09:09:00"),
+    sentByMe: false,
+    status: "read",
+    content: "Recebi o link, vou fazer a troca agora. Obrigado!",
+  },
+  {
+    sendAt: new Date("2024-10-24T09:10:30"),
+    sentByMe: true,
+    status: "read",
+    content: "De nada! Se precisar de mais alguma coisa, estou à disposição.",
+  },
+  {
+    sendAt: new Date("2024-10-24T09:12:00"),
+    sentByMe: false,
+    status: "read",
+    content:
+      "Tudo certo, cartão atualizado com sucesso! Muito obrigado pela ajuda.",
+  },
+  {
+    sendAt: new Date("2024-10-24T09:13:30"),
+    sentByMe: true,
+    status: "read",
+    content:
+      "Ótimo! Fico feliz que deu tudo certo. Se tiver qualquer dúvida no futuro, pode nos procurar.",
+  },
+  {
+    sendAt: new Date("2024-10-24T09:15:00"),
+    sentByMe: false,
+    status: "read",
+    content: "Pode deixar, obrigado novamente! Até mais.",
+  },
+  {
+    sendAt: new Date("2024-10-24T09:16:30"),
+    sentByMe: true,
+    status: "sent",
+    content: "Até mais, tenha um ótimo dia!",
+  },
 ]
